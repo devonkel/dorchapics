@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+ .col_12
+  .col_9
+   h2 Welcome
+   if isLoggedIn
+    p You are logged in!
+   else
+    p Please login to your Instagram account
